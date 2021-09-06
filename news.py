@@ -34,6 +34,7 @@ APP = Flask(__name__)
 SESSION = requests.Session()
 SESSION.headers.update({'Authorization': API_KEY})
 
+
 @APP.route('/', methods=['GET', 'POST'])
 def root():
     ''' Base URL redirect to the first page of general category. '''
